@@ -12,7 +12,7 @@ typealias BFCodeImageBlock = (String) -> Void
 
 class BFVerCodeView: UIView {
     
-    private let ARC4RAND_MAX: Int64 = 0x100000000
+    private let ARC4RAND_MAX: Int64 = Int64(0x100000000)
     
     /** 显示的验证字符 */
     var imageCodeStr: String = ""
