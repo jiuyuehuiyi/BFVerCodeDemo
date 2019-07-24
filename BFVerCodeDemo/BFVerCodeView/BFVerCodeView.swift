@@ -15,25 +15,25 @@ class BFVerCodeView: UIView {
     private let ARC4RAND_MAX: Int64 = Int64(0x100000000)
     
     /** 显示的验证字符 */
-    var imageCodeStr: String = ""
+    public var imageCodeStr: String = ""
     
     /** 验证码字符个数, 默认4个, 需要在freshVerCode函数调用之前设置 */
-    var codeCount: Int = 4
+    public var codeCount: Int = 4
     
     /** 字符是否旋转, 默认旋转 */
-    var isRotation: Bool = true
+    public var isRotation: Bool = true
     
-    var block: BFCodeImageBlock?
+    public var block: BFCodeImageBlock?
     
     let textArray = ["0","1","2","3","4","5","6","7","8","9","A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z","a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"]
     var bgView: UIView?
     
-    func freshVerCode() {
+    public func freshVerCode() {
         self.changeCodeStr()
         self.initImageCodeView()
     }
     
-    func freshVerCodeBy(_ codeStr : String) {
+    public func freshVerCodeBy(_ codeStr : String) {
         self.imageCodeStr = codeStr
         self.initImageCodeView()
     }
