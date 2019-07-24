@@ -3,7 +3,7 @@
 Pod::Spec.new do |spec|
 
   spec.name           = "BFVerCodeView"
-  spec.version        = "0.0.1"
+  spec.version        = "0.0.2"
   spec.summary        = "一个可刷新的验证码显示控件."
   spec.description    = <<-DESC
 类似图片验证码，可定义验证码个数和指定刷新字符
