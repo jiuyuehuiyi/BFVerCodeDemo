@@ -8,9 +8,9 @@
 
 import UIKit
 
-typealias BFCodeImageBlock = (String) -> Void
+public typealias BFCodeImageBlock = (String) -> Void
 
-class BFVerCodeView: UIView {
+open class BFVerCodeView: UIView {
     
     private let ARC4RAND_MAX: Int64 = Int64(0x100000000)
     
